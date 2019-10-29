@@ -1,5 +1,6 @@
 const shell = require('shelljs');
 const express = require("express");
+const http = requrie("http");
 const app = express();
 const sPort = 1337;
 
@@ -13,6 +14,6 @@ app.get("/update", (req, res) => {
     res.json({message: "Triggered server update"});
 });
 
-app.listen(() => {
-    console.log("Listening on Port" + sPort);
+http.createServer(app).listen(1337, () => {
+    console.log("Listening on Port " + sPort);
 });
