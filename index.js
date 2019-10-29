@@ -1,6 +1,6 @@
 const shell = require('shelljs');
 const express = require("express");
-const http = requrie("http");
+const http = require("http");
 const app = express();
 const sPort = 1337;
 
